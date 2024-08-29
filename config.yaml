@@ -1,0 +1,52 @@
+target:
+  hostname: "example.com"
+  protocol: "http"
+
+wordlists:
+  gobuster: "wordlists/common.txt"
+
+tools:
+  nmap:
+    port_range: "1-1000"
+    retries: 3
+  gobuster:
+    retries: 3
+  whatweb:
+    retries: 3
+  nikto:
+    retries: 3
+  sslscan:
+    retries: 3
+  wpscan:
+    retries: 3
+  sqlmap:
+    retries: 3
+  metasploit:
+    retries: 3
+  hydra:
+    retries: 3
+  john:
+    retries: 3
+
+workflow:
+  steps:
+    - tool: "nmap"
+      enabled: true
+    - tool: "gobuster"
+      enabled: true
+    - tool: "whatweb"
+      enabled: true
+    - tool: "nikto"
+      enabled: true
+    - tool: "sslscan"
+      enabled: true
+    - tool: "wpscan"
+      enabled: true
+    - tool: "sqlmap"
+      enabled: true
+    - tool: "metasploit"
+      enabled: true
+    - tool: "hydra"
+      enabled: true
+    - tool: "john"
+      enabled: true

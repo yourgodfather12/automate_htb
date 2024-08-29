@@ -1,0 +1,60 @@
+/* Improved and modernized styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    color: #343a40;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #343a40;
+    color: white;
+}
+
+.card-header {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.progress {
+    height: 20px;
+    border-radius: 10px;
+}
+
+pre {
+    background-color: #e9ecef;
+    color: #212529;
+    padding: 15px;
+    border-radius: 5px;
+    overflow-x: auto;
+    font-size: 0.9rem;
+}
+
+#scanChart {
+    margin-top: 20px;
+}
+
+.dark-mode {
+    background-color: #343a40;
+    color: #f8f9fa;
+}
+
+.dark-mode pre {
+    background-color: #2d2d2d;
+}
+
+.dark-mode header {
+    background-color: #495057;
+}
+
+.card, .modal-content {
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+}
